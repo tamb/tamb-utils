@@ -1,13 +1,17 @@
-# createElement
+# @tamb./utils
 
-various utils for creating HTML
+Utils I use
+
+
+## createElement
+a simple create element function
 
 ## Installation 
 ```js
-import {createElement} from "createElement";
+import {createElement} from "@tamb/utils";
 ```
 
-## Usage
+### Usage
 ```js
 createElement({
     type: "div",
@@ -20,7 +24,7 @@ createElement({
 })
 ```
 
-## refs
+### refs
 If you use `.call` and bind to an object you can create a ref as a field name in that object
 ```js
 const x = {};
@@ -33,7 +37,7 @@ createElement.call(x, {
 x.hey// will be your div
 ```
 
-## inserting
+### inserting
 ```js
 document.body.appendElement(createElement({type: "div"}));
 ```

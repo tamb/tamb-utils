@@ -1,12 +1,12 @@
 {
-  "name": "createElement",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@tamb/utils",
+  "version": "1.0.0-alpha.1",
+  "description": "utils I use",
   "scripts": {
     "test:watch": "jest --watch",
     "test": "jest",
     "build": "webpack",
-    "safe:publish": "npm run test && npm run build && npm publish"
+    "safe:publish": "npm run test && npm run build && npm publish --access=public"
   },
   "keywords": [],
   "author": {
