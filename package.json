@@ -1,0 +1,61 @@
+{
+  "name": "@tamb/game-controller",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test:watch": "jest --watch",
+    "test": "jest",
+    "build": "webpack",
+    "start": "webpack serve --env demo=true"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Thamb",
+    "email": "t.saporito@gmail.com",
+    "url": "https://tamb.github.io"
+  },
+  "main": "dist/main.js",
+  "module": "dist/main.js",
+  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "@types/jest": "^26.0.22",
+    "babel-jest": "^26.6.3",
+    "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.4.0",
+    "jest": "^26.6.3",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.9",
+    "postcss-loader": "^6.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "terser-webpack-plugin": "^5.2.4",
+    "ts-jest": "^26.5.5",
+    "ts-loader": "^9.2.6",
+    "typescript-declaration-webpack-plugin": "^0.2.2",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest",
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/demos/"
+    ]
+  }
+}
