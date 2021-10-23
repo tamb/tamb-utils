@@ -1,5 +1,3 @@
-import createElement from "./createElement";
+import _createElement from "./createElement";
 
-export default {
-  createElement,
-};
+export const createElement = _createElement;

@@ -3,7 +3,7 @@
  * @jest-environment jsdom
  */
 
-import createElement from "./createElement";
+import {createElement} from "./index";
 
 describe("createElement", () => {
   test("element of correct type is made", () => {

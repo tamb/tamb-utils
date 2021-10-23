@@ -5,9 +5,6 @@ interface IEl {
     text?: string;
     children?: IEl[];
 }
-export default function createElement(obj: IEl): HTMLElement;
+export default function _createElement(obj: IEl): HTMLElement;
 
-export declare const _default: {
-    createElement: typeof createElement;
-};
-export default _default;
+export declare const createElement: typeof _createElement;

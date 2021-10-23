@@ -1,6 +1,6 @@
 {
   "name": "@tamb/utils",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "utils I use",
   "scripts": {
     "test:watch": "jest --watch",

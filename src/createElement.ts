@@ -6,7 +6,7 @@ interface IEl {
   children?: IEl[];
 }
 
-export default function createElement(obj: IEl): HTMLElement {
+export default function _createElement(obj: IEl): HTMLElement {
   const el = document.createElement(obj.type);
   obj.attributes?.forEach((attrTuple: any) => {
     if (attrTuple[0] === "classes") {
@@ -21,7 +21,7 @@ export default function createElement(obj: IEl): HTMLElement {
   }
   if (obj.children) {
     obj.children.forEach((child) => {
-      el.appendChild(createElement.call(this, child));
+      el.appendChild(_createElement.call(this, child));
     });
   }
 
