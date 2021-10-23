@@ -1,16 +1,16 @@
 {
-  "name": "@tamb/game-controller",
+  "name": "createElement",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "test:watch": "jest --watch",
     "test": "jest",
     "build": "webpack",
-    "start": "webpack serve --env demo=true"
+    "safe:publish": "npm run test && npm run build && npm publish"
   },
   "keywords": [],
   "author": {
-    "name": "Thamb",
+    "name": "Tamb",
     "email": "t.saporito@gmail.com",
     "url": "https://tamb.github.io"
   },
